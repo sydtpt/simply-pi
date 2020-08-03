@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "simply-pi": {
+      "hosting": {
+        "simply-pi": [
+          "simply-pi"
+        ]
+      }
+    }
+  }
+}
