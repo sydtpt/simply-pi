@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthComponent } from './auth/auth.component';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
+// Angular Material
+import { MatCardModule } from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button'
+
+
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
   {
@@ -14,7 +22,11 @@ const routes: Routes = [
   declarations: [AuthComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    FormsModule,
+    RouterModule.forChild(routes),
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule
   ]
 })
 export class AuthModule { }
